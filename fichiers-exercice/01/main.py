@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 
 
 # Load the environment variables - set up the OpenAI API client
-load_dotenv()
+
 
 
 # Set up the model and prompt
