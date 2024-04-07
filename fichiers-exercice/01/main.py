@@ -12,6 +12,24 @@ load_dotenv()
 LANGUAGE_MODEL = "gpt-3.5-turbo"
 PROMPT_TEST = "This is a test prompt. Say this is a test"
 
+def get_tokens(user_input: str):
+    """Returns the number of tokens in a text string."""
+
+    encoding = tiktoken.get_encoding("cl100k_base")
+
+    token_integers = encoding.encode(user_input)
+    tokens_usage = len(token_integers)
+
+    tokenized_input = tokenized_input = list(
+        map(
+            lambda x: encoding.decode_single_token_bytes(x).decode("utf-8"),
+            encoding.encode(user_input),
+        )
+    )
+    print(f"{encoding}: {tokens_usage} tokens")
+    print(f"token integers: {tokens_usage}")
+    print(f"token bytes: {tokenized_input}")
+    
 
 def start():
     print(Fore.GREEN + "\nMENU")
