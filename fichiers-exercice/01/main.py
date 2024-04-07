@@ -12,10 +12,10 @@ client = openai.OpenAI()
 # Set up the model and prompt
 LANGUAGE_MODEL = "gpt-3.5-turbo"
 PROMPT_TEST = "This is a test prompt. Say this is a test"
-messages = [{"role": "system", "content": "You are helpful assistant."},]
+messages = [{"role": "system", "content": "Tu es un assistant drôle. Racontes nous 1 histoire drôle et courte sur le sujet donné par l'utilisateur"},]
 
 def get_tokens(user_input: str):
-    """Returns the number of tokens in a text string."""
+    """Prints the number of tokens in a text string."""
 
     encoding = tiktoken.get_encoding("cl100k_base")
 
@@ -56,7 +56,7 @@ def ask():
     print("=================================================")
 
     while True:
-        user_input = input("Q: ")
+        user_input = input("Topic: ")
 
         # Exit
         if user_input == "x":
@@ -71,7 +71,9 @@ def ask():
             )
 
             # print(completion.choices[0].message)
-
+            get_tokens(user_input)
+            get_tokens(completion.choices[0].message.content)
+          
             print(Fore.BLUE + f"A: {completion.choices[0].message.content}" + Fore.RESET)
             print(Fore.WHITE + "\n-------------------------------------------------")
 
