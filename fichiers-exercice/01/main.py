@@ -6,11 +6,13 @@ from dotenv import load_dotenv
 
 # Load the environment variables - set up the OpenAI API client
 load_dotenv()
+client = openai.OpenAI()
 
 
 # Set up the model and prompt
 LANGUAGE_MODEL = "gpt-3.5-turbo"
 PROMPT_TEST = "This is a test prompt. Say this is a test"
+messages = [{"role": "system", "content": "You are helpful assistant."},]
 
 def get_tokens(user_input: str):
     """Returns the number of tokens in a text string."""
@@ -61,7 +63,16 @@ def ask():
             start()
         else:
             # completion
-            print(Fore.BLUE + f"A: " + Fore.RESET)
+            messages.append({"role": "user", "content": user_input})
+
+            completion = client.chat.completions.create(
+                model=LANGUAGE_MODEL,
+                messages=messages, 
+            )
+
+            # print(completion.choices[0].message)
+
+            print(Fore.BLUE + f"A: {completion.choices[0].message.content}" + Fore.RESET)
             print(Fore.WHITE + "\n-------------------------------------------------")
 
 
