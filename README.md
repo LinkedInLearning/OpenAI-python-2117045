@@ -20,14 +20,15 @@ La branche master correspond au code à la fin de la formation.
 ## Installation
 
 1. Pour utiliser ces fichiers d’exercice, vous avez besoin de : 
-   - [Liste des logiciels/dépendances utiles à la formation] 
-2. Clonez ce dossier Repository sur votre machine locale (Mac), CMD (Windows), ou sur un outil GUI tel que SourceTree. 
-3. [Instructions spécifiques au cours] 
+* Python version ≥ 3.8.1 
+* [Visual Studio Code](https://code.visualstudio.com/) 
+* Créer un compte sur [OpenAI](https://openai.com/)
+2. Clonez ce dossier repository sur votre machine locale (Mac), CMD (Windows), ou sur un outil GUI tel que SourceTree. 
 
 
 ### Formateur
 
-**Nom du formateur** 
+**Sandy Ludosky** 
 
  Retrouvez mes autres formations sur [LinkedIn Learning][lil-URL-trainer].
 
