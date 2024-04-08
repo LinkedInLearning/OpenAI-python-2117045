@@ -56,13 +56,14 @@ def check_status(thread_id, run_id):
             thread_id=thread_id,
             run_id=run_id
         )
-        print(f"current run status : {run.status}")
-        if run.status == ["completed", "in_progress"]:
+        # print(f"current run status : {run.status}")
+        if run.status == "completed":
             return run
 
 def print_messages_from_thread(thread_id):
     """Prints all messages from a thread."""
-    pass
+    thread_messages = client.beta.threads.messages.list(thread_id=thread_id)
+    print(f"Alex: {thread_messages.data[0].content[0].text.value}")
 
 def main():
 
@@ -93,6 +94,7 @@ def main():
             continue
 
         # Step 6 - Pring the messages from the thread
+        print_messages_from_thread(thread.id)
 
 if __name__ == "__main__":
     main()
