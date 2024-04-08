@@ -51,7 +51,14 @@ def run_assistant(thread, assistant):
 
 def check_status(thread_id, run_id):
     """Checks the status of a run every second until it is completed."""
-    pass
+    while True:
+        run = client.beta.threads.runs.retrieve(
+            thread_id=thread_id,
+            run_id=run_id
+        )
+        print(f"current run status : {run.status}")
+        if run.status == ["completed", "in_progress"]:
+            return run
 
 def print_messages_from_thread(thread_id):
     """Prints all messages from a thread."""
@@ -79,6 +86,11 @@ def main():
         run = run_assistant(thread, assistant)
 
         # Step 5 - Check the run status
+        run = check_status(thread.id, run.id)
+
+        if run.status == "failed":
+            print(run.error)
+            continue
 
         # Step 6 - Pring the messages from the thread
 
