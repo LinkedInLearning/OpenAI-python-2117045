@@ -29,7 +29,7 @@ def create_thread():
     """Creates a thread."""
     pass
 
-def add_message_to_thread(thread, file, message):
+def add_message_to_thread(thread, message):
     """Adds a message to a thread."""
     pass
 
