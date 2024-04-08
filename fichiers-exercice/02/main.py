@@ -27,9 +27,11 @@ def create_assistant():
 
 def create_thread():
     """Creates a thread."""
-    pass
+    thread = client.beta.threads.create()
+    print(thread)
+    return thread
 
-def add_message_to_thread(thread, file, message):
+def add_message_to_thread(thread, message):
     """Adds a message to a thread."""
     pass
 
@@ -51,6 +53,7 @@ def main():
     assistant = create_assistant()
 
     # Step 2 - Create a thread
+    thread = create_thread()
 
     print(Fore.CYAN + "Agent: Bonjour, je suis Alex. Je suis ici pour vous aider \n(tapez 'exit' pour quitter)" + Fore.RESET)
 
