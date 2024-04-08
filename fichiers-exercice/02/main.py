@@ -42,7 +42,12 @@ def add_message_to_thread(thread, message):
 
 def run_assistant(thread, assistant):
     """Runs an assistant on a thread."""
-    print_messages_from_thread
+    run = client.beta.threads.runs.create(
+        thread_id=thread.id,
+        assistant_id=assistant.id
+    )
+    print(f"Run: {run.id}")
+    return run
 
 def check_status(thread_id, run_id):
     """Checks the status of a run every second until it is completed."""
@@ -71,6 +76,7 @@ def main():
         add_message_to_thread(thread, user_input)
         
         # Step 4 - Run the Assistant
+        run = run_assistant(thread, assistant)
 
         # Step 5 - Check the run status
 
