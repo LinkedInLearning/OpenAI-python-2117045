@@ -31,9 +31,14 @@ def create_thread():
     print(thread)
     return thread
 
-def add_message_to_thread(thread, file, message):
+def add_message_to_thread(thread, message):
     """Adds a message to a thread."""
-    pass
+    message = client.beta.threads.messages.create(
+        thread_id=thread.id,
+        role="user",
+        content=message
+    )
+    print(message)
 
 def run_assistant(thread, assistant):
     """Runs an assistant on a thread."""
@@ -63,6 +68,7 @@ def main():
             break
 
         # Step 3 - Add a message to the thread
+        add_message_to_thread(thread, user_input)
         
         # Step 4 - Run the Assistant
 
