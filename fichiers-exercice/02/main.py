@@ -57,7 +57,7 @@ def check_status(thread_id, run_id):
             run_id=run_id
         )
         print(f"current run status : {run.status}")
-        if run.status == ["completed", "in_progress"]:
+        if run.status in ["completed", "in_progress"]:
             return run
 
 def print_messages_from_thread(thread_id):
