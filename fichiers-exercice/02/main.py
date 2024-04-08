@@ -8,16 +8,13 @@ load_dotenv()
 
 LANGUAGE_MODEL = "gpt-3.5-turbo-1106"
 LANGUAGE_MODEL_GPT_4 = "gpt-4-1106-preview"
-ASSISTANT_NAME = "Alex, Customer Support Agent"
-ASSISTANT_DEFAULT_INSTRUCTIONS = """You are Alex. You are a customer support
-agent at a company selling and repairing Washing Machines. Use the user manual
-to answer the user's inquiries to the best of your abilities. If you don't
-know the exact answer, give the customer support's email address."""
+ASSISTANT_NAME = "Alex, Agent Support à la Clientèle"
+ASSISTANT_DEFAULT_INSTRUCTIONS = """Vous êtes Alex, un agent du support clientèle capable de répondre aux demandes des utilisateurs du mieux que vous le pouvez."""
 
 # Initialize clients with API keys
 client = openai.OpenAI()
 
-def create_assistant(file):
+def create_assistant():
     """Creates an assistant with the default instructions."""
     pass
 
@@ -47,7 +44,7 @@ def main():
 
     # Step 2 - Create a thread
 
-    print(Fore.CYAN + """Agent: Hello, I am Alex. I am here to assist you \n (type 'exit' to quit)""" + Fore.RESET)
+    print(Fore.CYAN + "Agent: Bonjour, je suis Alex. Je suis ici pour vous aider \n (tapez 'exit' pour quitter)" + Fore.RESET)
 
     while True:
         user_input = input("You: ")
