@@ -4,7 +4,7 @@ Ce dossier Repository est lié au cours `L'essentiel d'OpenAI pour le développe
 
 ![Nom final de la formation][lil-thumbnail-url] 
 
-DESCRIPTION DE LA FORMATION
+Depuis leur lancement en novembre 2022, les modèles de langage ont provoqué un véritable raz-de-marée sur la toile. Ils ne cessent de nous impressionner par leurs capacités de génération de contenu et d'images. Dans ce cours, vous découvrirez comment tirer parti des API d'OpenAI pour créer des projets entièrement pilotés par l'intelligence artificielle. Ainsi, en tant que développeur, vous apprendrez à développer des applications de nouvelle génération, en Python. Sandy Ludosky vous invite à la rejoindre dans cette formation et à démarrer avec l'IA générative !
 
 ## Instructions
 
