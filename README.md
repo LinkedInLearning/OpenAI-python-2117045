@@ -1,10 +1,10 @@
-# Nom final de la formation
+# L'essentiel d'OpenAI pour le développement en Python
 
-Ce dossier Repository est lié au cours `Nom final de la formation`. Le cours entier est disponible sur [LinkedIn Learning][lil-course-url].
+Ce dossier Repository est lié au cours `L'essentiel d'OpenAI pour le développement en Python`. Le cours entier est disponible sur [LinkedIn Learning][lil-course-url].
 
 ![Nom final de la formation][lil-thumbnail-url] 
 
-DESCRIPTION DE LA FORMATION
+Depuis leur lancement en novembre 2022, les modèles de langage ont provoqué un véritable raz-de-marée sur la toile. Ils ne cessent de nous impressionner par leurs capacités de génération de contenu et d'images. Dans ce cours, vous découvrirez comment tirer parti des API d'OpenAI pour créer des projets entièrement pilotés par l'intelligence artificielle. Ainsi, en tant que développeur, vous apprendrez à développer des applications de nouvelle génération, en Python. Sandy Ludosky vous invite à la rejoindre dans cette formation et à démarrer avec l'IA générative !
 
 ## Instructions
 
@@ -33,9 +33,9 @@ La branche master correspond au code à la fin de la formation.
  Retrouvez mes autres formations sur [LinkedIn Learning][lil-URL-trainer].
 
 [0]: # (Replace these placeholder URLs with actual course URLs)
-[lil-course-url]: https://www.linkedin.com
-[lil-thumbnail-url]: https:
-[lil-URL-trainer]: https://
+[lil-course-url]: https://www.linkedin.com/learning/l-essentiel-d-openai-pour-le-developpement-en-python
+[lil-thumbnail-url]: https://media.licdn.com/dms/image/D4E0DAQGMISXltcP7hg/learning-public-crop_675_1200/0/1718006015180?e=2147483647&v=beta&t=IUVSaJXi31_fYTMPfG23Y-XOrzKdD1_dh5ljvfCYfa4
+[lil-URL-trainer]: https://www.linkedin.com/learning/instructors/sandy-ludosky
 
 [1]: # (End of FR-Instruction ###############################################################################################)
 
