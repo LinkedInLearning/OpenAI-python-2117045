@@ -34,8 +34,8 @@ La branche master correspond au code à la fin de la formation.
 
 [0]: # (Replace these placeholder URLs with actual course URLs)
 [lil-course-url]: https://www.linkedin.com/learning/l-essentiel-d-openai-pour-le-developpement-en-python
-[lil-thumbnail-url]: https:
-[lil-URL-trainer]: https://
+[lil-thumbnail-url]: https://media.licdn.com/dms/image/D4E0DAQGMISXltcP7hg/learning-public-crop_675_1200/0/1718006015180?e=2147483647&v=beta&t=IUVSaJXi31_fYTMPfG23Y-XOrzKdD1_dh5ljvfCYfa4
+[lil-URL-trainer]: https://www.linkedin.com/learning/instructors/sandy-ludosky
 
 [1]: # (End of FR-Instruction ###############################################################################################)
 
