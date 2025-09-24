@@ -12,7 +12,16 @@
       },
       // Add the IDs of extensions you want installed when the container is created.
       "extensions": [
-        "linkedinlearning.linkedinlearning-vscode-theme"
+        "linkedinlearning.linkedinlearning-vscode-theme",
+        "ms-python.python",
+        "ms-toolsai.jupyter",
+        "ms-python.vscode-pylance",
+        "ms-python.flake8", // or your preferred linter
+        "ms-python.black-formatter", // or your preferred formatter
+        "ms-azuretools.vscode-docker",
+        "humao.rest-client",
+        "EditorConfig.EditorConfig",
+        "eamodio.gitlens"
       ]
     }
   },
